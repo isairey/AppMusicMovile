@@ -13,9 +13,9 @@
 <p align="center">
   <img src="https://img.shields.io/badge/Android-Supported-success?style=for-the-badge&logo=android">
   <img src="https://img.shields.io/badge/iOS-Supported-black?style=for-the-badge&logo=apple">
-  <img src="https://img.shields.io/github/stars/isairey/Kicks?style=for-the-badge">
-  <img src="https://img.shields.io/github/forks/isairey/Kicks?style=for-the-badge">
-  <img src="https://img.shields.io/github/license/isairey/Kicks?style=for-the-badge">
+  <img src="https://img.shields.io/github/stars/isairey/AppMusicMovile?style=for-the-badge">
+  <img src="https://img.shields.io/github/forks/isairey/AppMusicMovile?style=for-the-badge">
+  <img src="https://img.shields.io/github/license/isairey/AppMusicMovile?style=for-the-badge">
 </p>
 
 <p align="center">
@@ -181,8 +181,8 @@ Kicks/
 ## 1️⃣ Clonar el repositorio
 
 ```bash
-git clone https://github.com/isairey/Kicks.git
-cd Kicks
+git clone https://github.com/isairey/AppMusicMovile.git
+cd AppMusicMovile
 ```
 
 ---
