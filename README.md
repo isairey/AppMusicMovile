@@ -2,7 +2,7 @@
 
 <img width="140" src="https://github.com/isairey.png" />
 
-# 🎵 Kicks
+# 🎵 AppMusicMovile Kicks
 
 ### Streaming musical multiplataforma con Kotlin Multiplatform 🚀
 
@@ -321,6 +321,6 @@ Este proyecto está bajo la licencia **Apache 2.0**.
 
 <div align="center">
 
-### 🎶 Kicks — Una sola base de código, música en todas partes.
+### 🎶 AppMusicMovile Kicks — Una sola base de código, música en todas partes.
 
 </div>
