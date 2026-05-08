@@ -1,122 +1,326 @@
-![](/assets/graphic.png)
+<div align="center">
 
-# Kicks
+<img width="140" src="https://github.com/isairey.png" />
 
-Kicks is a simple music streaming app built with
-**Kotlin Multiplatform Mobile** and **Compose Multiplatform**
+# 🎵 Kicks
 
-| Platforms | ![](https://img.shields.io/badge/Android-black.svg?style=for-the-badge&logo=android) ![](https://img.shields.io/badge/iOS-black.svg?style=for-the-badge&logo=apple)  |
-|-----------|---|
+### Streaming musical multiplataforma con Kotlin Multiplatform 🚀
 
+<p align="center">
+  Kicks es una aplicación moderna de streaming de música desarrollada con <b>Kotlin Multiplatform Mobile</b> y <b>Compose Multiplatform</b>, diseñada para ofrecer una experiencia fluida tanto en Android como en iOS desde una sola base de código.
+</p>
 
-### How does it work?
+<p align="center">
+  <img src="https://img.shields.io/badge/Android-Supported-success?style=for-the-badge&logo=android">
+  <img src="https://img.shields.io/badge/iOS-Supported-black?style=for-the-badge&logo=apple">
+  <img src="https://img.shields.io/github/stars/isairey/Kicks?style=for-the-badge">
+  <img src="https://img.shields.io/github/forks/isairey/Kicks?style=for-the-badge">
+  <img src="https://img.shields.io/github/license/isairey/Kicks?style=for-the-badge">
+</p>
 
-It streams free audio medias; from [Pixabay](https://pixabay.com/music/). The app uses expect/actual to delegate 
-the [AudioPlayer](https://github.com/ayodelekehinde/Kicks/blob/f144c2dc614f5680e0685f99a31cd977559809c1/shared/src/commonMain/kotlin/io/github/kicks/audioplayer/AudioPlayer.kt)
-to both platforms using AVPlayer on iOS and Media3 on Android.
+<p align="center">
+  <a href="#-preview">Preview</a> •
+  <a href="#-características">Características</a> •
+  <a href="#-tecnologías-utilizadas">Tecnologías</a> •
+  <a href="#-instalación">Instalación</a> •
+  <a href="#-roadmap">Roadmap</a>
+</p>
 
+</div>
 
-### 📱 Sneak peak
-### Screenshots
+---
 
-<a href="url"><img src="/assets/android.png" align="left" height="600" width="284" ></a>
-<a href="url"><img src="/assets/iOS.png" align="center" height="600" width="284" ></a>
+# 🌊 Acerca de Kicks
 
+**Kicks** es una aplicación de streaming musical desarrollada usando tecnologías modernas de desarrollo multiplataforma.
 
-#### ▶️ Android
+La aplicación utiliza una arquitectura compartida para Android y iOS mediante **Kotlin Multiplatform**, permitiendo reutilizar lógica de negocio y UI desde una sola base de código.
+
+El reproductor obtiene contenido musical libre desde Pixabay Music y utiliza implementaciones nativas para reproducción multimedia:
+
+- 🍎 **AVPlayer** en iOS
+- 🤖 **Media3 / ExoPlayer** en Android
+
+---
+
+# 📸 Preview
+
+<div align="center">
+
+<img src="/assets/graphic.png" width="1000"/>
+
+</div>
+
+---
+
+# 📱 Capturas de Pantalla
+
+<div align="center">
+
+<img src="/assets/android.png" width="280"/>
+<img src="/assets/iOS.png" width="280"/>
+
+</div>
+
+---
+
+# ✨ Características
+
+## 🎧 Reproductor Musical
+
+- ▶️ Reproducción de audio en tiempo real
+- ⏯️ Controles Play / Pause
+- ⏭️ Siguiente canción
+- ⏮️ Canción anterior
+- 🔀 Scroll automático al elemento actual
+- ⌛ Barra de progreso
+- 📍 Seek dinámico
+- 🔁 Auto Next
+- 🎵 Playlist integrada
+
+---
+
+## 📱 Multiplataforma
+
+- 🤖 Android
+- 🍎 iOS
+- ⚡ Código compartido
+- 🎨 UI compartida con Compose Multiplatform
+
+---
+
+## 🚀 Arquitectura Moderna
+
+- 📦 Kotlin Multiplatform Mobile
+- 🎨 Compose Multiplatform
+- 🔊 AVPlayer + Media3
+- 🔥 Expect / Actual Pattern
+
+---
+
+# 🎥 Demo Android
+
+<div align="center">
 
 https://user-images.githubusercontent.com/61739400/234009722-6f65161f-950b-4479-8f65-0e8934593bed.mp4
 
+</div>
 
+---
 
+# 🍎 Demo iOS
 
-#### ▶️ iOS
+<div align="center">
 
 https://user-images.githubusercontent.com/61739400/234008361-54ef31d7-e492-445c-92f4-22e723d6d2f8.mp4
 
----
-
-## Built with
-
-- [Kotlin](kotlinlang.org): Programming language
-- [Kotlin/Native](https://kotlinlang.org/docs/native-overview.html): Kotin Native interop with Objective-C 
-- [Kotlin Multiplatform](https://kotlinlang.org/docs/multiplatform.html): For building multi-platform applications in the single codebase.
-- [Compose Multiplatform](https://www.jetbrains.com/lp/compose-multiplatform/): For a shared UI between Android and iOS.
-- [AVPlayer](https://developer.apple.com/documentation/avfoundation/avplayer): Foundation Media player library for iOS
-- [Media3](https://developer.android.com/guide/topics/media/media3): Exoplayer based Media player library for Android
-- [UI Design](https://webdesign.tutsplus.com/tutorials/music-player-app-ui-design-adobe-xd--cms-34793): design for the UI.
-
-## TODOs
-
-Currently, this is a one screen app, showing playlist and controls. More work to be done.
-
-### ✅ Completed
-- [x] Playlist and controls UI
-- [x] Basic controls play/pause/next/prev
-- [x] Auto next
-- [x] Seek
-- [x] Current duration
-- [x] Auto scroll if currently played item is hidden
-
-### 🚧 To be done
-- [ ] Full player screen
-- [ ] Background play
-- [ ] Player notification
-- [ ] Maybe a library out off all this.
-
-## Setting up project 👨🏻‍💻
-
-- Refer to the ***"Setting up environment"*** section of [this repository](https://github.com/JetBrains/compose-multiplatform-ios-android-template/main/README.md)
-  for knowing the setup guidelines
-- After validating requirements as per the above guide, clone this repository.
-- Open this project in Android Studio Electric Eel or newer version.
-- Build project 🔨 and see if everything is working fine.
-- Run App
-    - Select "androidApp" as run configuration and you'll be able to run the Android app.
-    - Select "iosApp" as run configuration and you'll be able to run the iOS app _(XCode can also be used to run the app)_.
-
-## Project structure
-
-This Compose Multiplatform project includes three modules:
-
-### [`shared`](/shared)
-This is a Kotlin module that contains the logic common for both Android and iOS applications, the code you share between platforms.
-This shared module is also where you write your Compose Multiplatform code. In `shared/src/commonMain/kotlin/App.kt`, you can find the shared root `@Composable` function for your app.
-It uses Gradle as the build system. You can add dependencies and change settings in `shared/build.gradle.kts`. The shared module builds into an Android library and an iOS framework.
-
-### [`android`](/android)
-This is a Kotlin module that builds into an Android application. It uses Gradle as the build system. The `androidApp` module depends on and uses the shared module as a regular Android library.
-
-### [`ios`](/ios)
-This is an Xcode project that builds into an iOS application. It depends on and uses the shared module as a CocoaPods dependency.
+</div>
 
 ---
 
-## Contribute
+# 🛠️ Tecnologías Utilizadas
 
-Feel free to fork and open a pull request.
+## 📱 Mobile
 
-## Acknowledgements
+<p>
+  <img src="https://skillicons.dev/icons?i=kotlin,androidstudio" />
+</p>
 
-- [JetBrains/compose-multiplatform-ios-android-template](https://github.com/JetBrains/compose-multiplatform-ios-android-template#readme):
-  For Starter template
-- [Fooduim-Kmm](https://github.com/PatilShreyas/Foodium-KMM/README.md): For an awesome readme template.
-  
+- Kotlin
+- Kotlin Multiplatform Mobile
+- Compose Multiplatform
+- Kotlin Native
 
-## License
+---
 
+## 🎵 Multimedia
+
+- 🍎 AVPlayer (iOS)
+- 🤖 Media3 / ExoPlayer (Android)
+
+---
+
+## 🎨 UI & Arquitectura
+
+- Compose UI
+- Expect / Actual Pattern
+- Shared UI Components
+- Shared Business Logic
+
+---
+
+## 🧰 Herramientas
+
+<p>
+  <img src="https://skillicons.dev/icons?i=git,github,gradle,apple" />
+</p>
+
+- Git & GitHub
+- Gradle
+- Xcode
+- Android Studio
+
+---
+
+# 📂 Estructura del Proyecto
+
+```bash
+Kicks/
+│
+├── shared/          # Código compartido KMM
+├── android/         # Aplicación Android
+├── ios/             # Aplicación iOS
+├── assets/          # Recursos gráficos
+└── README.md
 ```
-Copyright 2023 Ayodele Kehinde
 
-Licensed under the Apache License, Version 2.0 (the "License");
-you may not use this file except in compliance with the License.
-You may obtain a copy of the License at
+---
 
-http://www.apache.org/licenses/LICENSE-2.0
+# ⚡ Instalación
 
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and
-limitations under the License.
+## 1️⃣ Clonar el repositorio
+
+```bash
+git clone https://github.com/isairey/Kicks.git
+cd Kicks
 ```
+
+---
+
+# 🔥 Requisitos
+
+- Android Studio Electric Eel o superior
+- Xcode
+- Kotlin Multiplatform
+- JDK 17+
+
+---
+
+# ▶️ Ejecutar Android
+
+Seleccionar:
+
+```bash
+androidApp
+```
+
+Luego ejecutar desde Android Studio.
+
+---
+
+# 🍎 Ejecutar iOS
+
+Seleccionar:
+
+```bash
+iosApp
+```
+
+O abrir directamente el proyecto en Xcode.
+
+---
+
+# 🚀 Funcionalidades Completadas
+
+## ✅ Finalizado
+
+- 🎵 Playlist UI
+- ▶️ Play / Pause
+- ⏭️ Next / Previous
+- 🔁 Auto Next
+- 📍 Seek dinámico
+- ⌛ Duración actual
+- 🔀 Auto Scroll
+
+---
+
+# 📊 Roadmap
+
+## 🚧 Próximamente
+
+- 🔥 Pantalla completa del reproductor
+- 🌙 Reproducción en segundo plano
+- 🔔 Notificaciones multimedia
+- ❤️ Biblioteca musical
+- 📂 Playlists personalizadas
+- 📱 Widgets multimedia
+- 🎶 Letras sincronizadas
+- ☁️ Streaming online
+
+---
+
+# 🤝 Contribuciones
+
+Las contribuciones son bienvenidas ❤️
+
+## Pasos para contribuir
+
+1. Haz Fork del proyecto
+2. Crea una rama
+
+```bash
+git checkout -b feature/nueva-funcion
+```
+
+3. Realiza tus cambios
+4. Haz commit
+
+```bash
+git commit -m "✨ Nueva funcionalidad"
+```
+
+5. Haz push
+
+```bash
+git push origin feature/nueva-funcion
+```
+
+6. Abre un Pull Request 🚀
+
+---
+
+# 🙌 Créditos
+
+## Inspirado por
+
+- JetBrains Compose Multiplatform
+- Pixabay Music
+- Foodium-KMM
+
+---
+
+# 👨‍💻 Autor
+
+<div align="center">
+
+<img src="https://github.com/isairey.png" width="120" style="border-radius:50%" />
+
+## Isai Reyes
+
+Desarrollador Full Stack apasionado por las aplicaciones multiplataforma, interfaces modernas y experiencias multimedia.
+
+</div>
+
+---
+
+# 🌟 Apoya el Proyecto
+
+Si te gusta Kicks:
+
+⭐ Dale una estrella al repositorio  
+🍴 Haz Fork del proyecto  
+📢 Compártelo con otros desarrolladores
+
+---
+
+# 📜 Licencia
+
+Este proyecto está bajo la licencia **Apache 2.0**.
+
+---
+
+<div align="center">
+
+### 🎶 Kicks — Una sola base de código, música en todas partes.
+
+</div>
